@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Calculator using HTML Example
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="calculator.js">
+
+    </script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="calc-body"><h1 style="color:black;text-align:center;font-family:URW Chancery L, cursive;font-size:40px"><b>calculator</b></h1>
+        <div class="calc-screen" >
+            <!--<div class="calc-operation" ><input type="text" id="input"/></div><hr>-->
+            <div class="calc-typed" ><input style="color:white" type="text" id="result"/>  </div>
+        </div>
+        <div class="calc-button-row">
+            <div class="button c" value="c" onclick="clr()"> C </div>
+
+            <div class="button l" value="%" onclick="dis('%')"> % </div>
+            <div class="button l" value="/" onclick="dis('/')"> / </div>
+            <div class="button c" value="c" onclick="back()"> del </div>
+        </div>
+        <div class="calc-button-row">
+         <!--   <input class="button"  value="7" onclick="dis('7')"/>-->
+            <div class="button" value="7" onclick="dis('7')"> 7 </div>
+            <div class="button" value="8" onclick="dis('8')"> 8</div>
+            <div class="button" value="9" onclick="dis('9')"> 9 </div>
+            <div class="button l" value="*" onclick="dis('*')"> x </div>
+        </div>
+        <div class="calc-button-row">
+            <div class="button" value="4" onclick="dis('4')"> 4 </div>
+            <div class="button" value="5" onclick="dis('5')"> 5 </div>
+            <div class="button" value="6" onclick="dis('6')"> 6 </div>
+            <div class="button l" value="-" onclick="dis('-')"> -</div>
+        </div>
+        <div class="calc-button-row">
+            <div class="button" value="1" onclick="dis('1')"> 1 </div>
+            <div class="button" value="2" onclick="dis('2')"> 2 </div>
+            <div class="button" value="3" onclick="dis('3')"> 3 </div>
+            <div class="button l" value="+" onclick="dis('+')"> + </div>
+        </div>
+        <div class="calc-button-row">
+            <div class="button" value="." onclick="dis('.')"> . </div>
+            <div class="button" value="0" onclick="dis('0')"> 0 </div>
+            <div class="button" value="00" onclick="dis('00')"> 00 </div>
+            <div class="button l" value="=" onclick="solve()"> = </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
